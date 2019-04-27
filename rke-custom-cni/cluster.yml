@@ -1,0 +1,15 @@
+nodes:
+    - address: 1.1.1.1
+      user: ubuntu
+      role:
+        - controlplane
+        - etcd
+        - worker
+
+ignore_docker_version: true
+
+network:
+    plugin: none
+
+addons_include:
+    - ./kube-flannel.yml
